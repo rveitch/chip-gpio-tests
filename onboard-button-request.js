@@ -23,12 +23,10 @@ board.on('ready', function() {
 			delivered: true,
 			//retrieved: false,
 			//retrievedByName: '',
-			//note: '',
+			note: 'Sent from C.H.I.P.',
 		}
 
 		console.log(postBody);
-		//var requestURL = 'https://fccua.herokuapp.com/';
-		//var requestURL = 'localhost:3000/event/post';
 		var requestURL = 'https://trigger-api.herokuapp.com/event/post';
 		var options = {
 			method: 'POST',
@@ -42,7 +40,7 @@ board.on('ready', function() {
 
 		request(options, function (error, response, body) {
 			//if (error) throw new Error(error);
-			console.log('request sent to: ' + requestURL);
+			console.log('Delivery event sent at '  + moment(Date.now()).format('LL h:mma'));
 		});
   });
 
