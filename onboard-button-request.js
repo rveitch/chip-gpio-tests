@@ -1,5 +1,6 @@
 var five = require('johnny-five');
 var chipio = require('chip-io');
+var request = require('request');
 var moment = require('moment');
 
 var board = new five.Board({
