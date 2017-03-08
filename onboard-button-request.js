@@ -27,12 +27,12 @@ board.on('ready', function() {
 		}
 
 		console.log(postBody);
-		var requestURL = 'https://fccua.herokuapp.com/';
+		//var requestURL = 'https://fccua.herokuapp.com/';
+		//var requestURL = 'localhost:3000/event/post';
+		var requestURL = 'https://trigger-api.herokuapp.com/event/post';
 		var options = {
 			method: 'POST',
 			url: requestURL,
-			//url: 'https://trigger-api.herokuapp.com/event/post',
-			//url: 'localhost:3000/event/post',
 			headers: {
 				'cache-control': 'no-cache',
 				'content-type': 'application/json' },
