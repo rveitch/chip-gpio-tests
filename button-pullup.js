@@ -8,7 +8,7 @@ var board = new five.Board({
 board.on('ready', function() {
   // Create an button on the XIO-P6 pin
   var button = new five.Button({
-		'XIO-P6',
+		pin: 'XIO-P6',
 		isPullup: true
 	});
 
