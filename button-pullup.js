@@ -7,10 +7,10 @@ var board = new five.Board({
 
 board.on('ready', function() {
   // Create an button on the XIO-P6 pin
-  var button = new five.Button(
+  var button = new five.Button({
 		'XIO-P6',
 		isPullup: true
-	);
+	});
 
   // add event listeners for 'up' and 'down' events
 
